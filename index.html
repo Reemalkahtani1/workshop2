@@ -1,17 +1,28 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Your front-end</title>
 </head>
-
 <body>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-</form> 
+	<center>	
+		<font size="6" face="Avenir">
+			<b>
+	<p>food text classification system &nbsp; <img src="photo.jpg" height="100" width="100"> </p>
+			</b>
+		</center>
+	</font>
+	<center>	
 
+		<form action="/fasttext">
+			<textarea rows="4" cols="50" name="statement" id = 'text'></textarea> 
+			<center>
+			<input type="submit" value="Submit" id = 'button'>
+			<input type="reset" value="Clear">
+
+		</form>
+	</center>
+	
 </body>
 
 </html> 

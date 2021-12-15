@@ -32,7 +32,8 @@ app.get('/fasttext/', function(req, res) {
 });
 
 function getFastTextResults(statement) {
-	//predict returns an array with the input and predictions for best cateogires
+  //predict returns an array with the input and predictions for best cateogires
+  let x = null;
 	FastText.predict(
 		"model.bin", 3,
 		[statement],
@@ -42,9 +43,9 @@ function getFastTextResults(statement) {
 			console.log(error)
 			return;
 		  }
-		  console.log(success)
+		  x =success;
 		})
-	return "success!";
+	return x;
 }
 
 app.listen(8000, () => {
